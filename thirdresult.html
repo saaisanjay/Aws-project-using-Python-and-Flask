@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+   <body>
+
+   <center>
+     <header><h2>saai sanjay swaminathan <br> 1001539258</h2>
+             <h1> This page lists the earthquake records </h1>
+             <h2> <a href = "/">Home</a> </h2>
+      </header>
+      <br> <br>
+      <table border = 1>
+         <thead>
+            <td>time</td>
+            <td>latitude</td>
+            <td>Logitude</td>
+            <td>depth</td>
+            <td>mag</td>
+            <td>magType</td>
+            <td>nst</td>
+            <td>gap</td>
+            <td>dmin</td>
+            <td>rms</td>
+            <td>id</td>
+            <td>place</td>
+            <td>depthError</td>
+            <td>magerror</td>
+            <td>magnst</td>
+            <td>locationsource</td>
+
+         </thead>
+
+         {% for row in dist %}
+          {% for rows in row%}
+         <tr>
+            <td>{{rows[0]}}</td>
+            <td>{{rows[1]}}</td>
+            <td>{{rows[2]}}</td>
+            <td>{{rows[3]}}</td>
+            <td>{{rows[4]}}</td>
+            <td>{{rows[5]}}</td>
+            <td>{{rows[6]}}</td>
+            <td>{{rows[7]}}</td>
+            <td>{{rows[8]}}</td>
+            <td>{{rows[9]}}</td>
+            <td>{{rows[10]}}</td>
+            <td>{{rows[11]}}</td>
+            <td>{{rows[12]}}</td>
+            <td>{{rows[13]}}</td>
+            <td>{{rows[14]}}</td>
+            <td>{{rows[15]}}</td>
+
+         </tr>
+          {% endfor %}
+         {%endfor%}
+      </table>
+
+      <br>
+
+   </body>
+</html>
