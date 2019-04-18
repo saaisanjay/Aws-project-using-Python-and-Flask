@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+   <body>
+
+   <center>
+     <header><h2>saai sanjay swaminathan <br> 1001539258</h2>
+             <h1> This page lists the earthquake records </h1>
+             <h2> <a href = "/">Home</a> </h2>
+      </header>
+      <br> <br>
+      <table border = 1>
+         <thead>
+            <td>time</td>
+            <td>latitude</td>
+            <td>Logitude</td>
+            <td>depth</td>
+            <td>mag</td>
+            <td>magType</td>
+            <td>nst</td>
+            <td>gap</td>
+            <td>dmin</td>
+            <td>rms</td>
+            <td>id</td>
+            <td>place</td>
+            <td>depthError</td>
+            <td>magerror</td>
+            <td>magnst</td>
+            <td>locationsource</td>
+
+         </thead>
+
+         {% for row in rows %}
+         <tr>
+            <td>{{row["time"]}}</td>
+            <td>{{row["latitude"]}}</td>
+            <td>{{row["longitude"]}}</td>
+            <td>{{row["depth"]}}</td>
+            <td>{{row["mag"]}}</td>
+            <td>{{row["magType"]}}</td>
+            <td>{{row["nst"]}}</td>
+            <td>{{row["gap"]}}</td>
+            <td>{{row["dmin"]}}</td>
+            <td>{{row["rms"]}}</td>
+            <td>{{row["id"]}}</td>
+            <td>{{row["place"]}}</td>
+            <td>{{row["depthError"]}}</td>
+            <td>{{row["magError"]}}</td>
+            <td>{{row["magNst"]}}</td>
+            <td>{{row["locationSource"]}}</td>
+
+         </tr>
+         {% endfor %}
+      </table>
+
+      <br>
+
+   </body>
+</html>

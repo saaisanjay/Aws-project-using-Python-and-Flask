@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+   <body>
+
+
+      <center><header> <h1> Saai sanjay swaminathan <br> 1001539258</h1> </header>
+        <img src="./static/earth.jpg"
+      <br>
+            <h1> Upload CSV file here</h1>
+            <form action="{{url_for('csvfile')}}" method="POST" enctype = "multipart/form-data">
+            CSV File:  <input type="file" name="csv">
+            <br> <br>
+            <input type="submit" name="Submit here"><br>
+
+      <h2><a href = "/list">Get table data here</a></h2>
+      <h2> <a href = "/firstform">Magnitude</a> </h2>
+      <h2> <a href = "/secondform">Week</a> </h2>
+      <h2> <a href = "/third">Distance</a> </h2>
+      <h2> <a href = "/fourth">Clustering</a> </h2>
+      <h2> <a href = "/fiveform">Night</a> </h2>
+      <h2> <a href = "/size">Size</a> </h2>
+
+
+
+    </body>
+</html>

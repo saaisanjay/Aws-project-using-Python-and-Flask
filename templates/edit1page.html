@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border = 1>
+         <thead>
+            <td>Name</td>
+         </thead>
+
+         {% for row in rows %}
+         <tr>
+            <td>{{ row }}</td>
+    </tr>
+         {% endfor %}
+</table>
+<form action="{{ url_for('edit1page') }}" method="POST" enctype="multipart/form-data">
+    Enter Name:<input type="text" name="name">
+<input type="submit" value="Edit">
+    </form>
+
+</body>
+</html>
